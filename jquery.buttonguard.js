@@ -3,7 +3,8 @@ if(typeof jQuery === 'undefined')
 	throw new Error('Buttonguard requires jQuery')
 }
 
-+function($) {
++function($)
+{
 	$.fn.buttonguard = function(options)
 	{
 		var settings = $.extend({
