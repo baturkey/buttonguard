@@ -7,9 +7,9 @@ Requires
 Buttonguard is a JQuery plugin 
 
 ## Usage example
-    
+    html
 <button class="btn btn-primary" id="AButton">Hi</button>
-
+    
 $(function() {
 	$("#AButton").buttonguard();
 });
