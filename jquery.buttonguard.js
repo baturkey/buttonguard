@@ -6,12 +6,12 @@ if(typeof jQuery === 'undefined')
 +function($) {
 	$.fn.buttonguard = function(options)
 	{
-        var settings = $.extend({
+		var settings = $.extend({
 			oldClass: 'btn-primary',
 			newClass: 'btn-danger',
 			duration: 5000,
 			newText:  'Confirm'
-        }, options);
+		}, options);
 
 		var btn = this;
 		var old = btn.html();
