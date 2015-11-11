@@ -8,11 +8,9 @@ Buttonguard is a JQuery plugin that makes users click a button twice to submit a
 
 ## Options
 
-* oldClass
-
-default: 'btn-primary'
-
-The CSS class to change from
+| Option   | Default Value | Description                  |
+|----------|---------------|------------------------------|
+| oldClass | btn-primary   | The CSS class to change from |
 
 * newClass
 
