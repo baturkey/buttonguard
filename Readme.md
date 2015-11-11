@@ -1,10 +1,10 @@
 # Buttonguard
 
-Requires
+Buttonguard is a JQuery plugin that makes users click a button twice to submit a form
+
+## Requires
 * JQuery
 * JQuery UI
-
-Buttonguard is a JQuery plugin that makes users click a button twice to submit a form
 
 ## Options
 
