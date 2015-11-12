@@ -1,5 +1,5 @@
 if(typeof jQuery === 'undefined') {
-	throw new Error('Buttonguard requires jQuery')
+	throw new Error('Buttonguard requires jQuery');
 }
 
 +function($) {
@@ -7,29 +7,31 @@ if(typeof jQuery === 'undefined') {
 	$.fn.buttonguard = function(options) {
 
 		var settings = $.extend({
-			newText:  'Confirm'
+			newHtml: 'Confirm'
 		}, options);
 
 		var btn = this;
-		var old = btn.html();
+		var oldHtml = btn.html();
 
-		return this.attr('type', 'button').click(function(event) {
+		this.attr('type', 'button')
+		return this.click(function(event) {
 
 			if(btn.attr('type') == 'button') {
 				event.preventDefault();
 			}
 
-			btn.attr('type', 'submit');
-			btn.html(settings.newText);
+			btn.html(settings.newHtml).attr('type', 'submit');
 
-			if(settings.oldClass, settings.newClass) {
+			if(typeof jQuery.ui !== 'undefined' && settings.oldClass && settings.newClass) {
 				btn.switchClass(settings.oldClass, settings.newClass);
 			}
 
 			if(settings.duration) {
 				window.setTimeout(function() {
-					btn.html(old).attr('type', 'button');
-					if(settings.oldClass, settings.newClass) {
+
+					btn.html(oldHtml).attr('type', 'button');
+
+					if(typeof jQuery.ui !== 'undefined' && settings.oldClass && settings.newClass) {
 						btn.switchClass(settings.newClass, settings.oldClass);
 					}
 				}, settings.duration);
