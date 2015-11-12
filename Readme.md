@@ -10,13 +10,12 @@ Buttonguard is a JQuery plugin that makes users click a button twice to submit a
 
 ## Options
 
-| Option   | Default Value | Description                                                                   |
-|----------|---------------|-------------------------------------------------------------------------------|
-| newText  | Confirm       | What the button will say after being clicked                                  |
-| oldClass |               | The CSS class to change from                                                  |
-| newClass |               | The CSS class to change to                                                    |
-| duration |               | The length of time in ms that the button will be active after the first click |
-|          |               | If not set the button will stay active                                        |
+| Option   | Default Value | Description                                                                                                           |
+|----------|---------------|-----------------------------------------------------------------------------------------------------------------------|
+| newText  | Confirm       | What the button will say after being clicked                                                                          |
+| oldClass |               | The CSS class to change from. newClass also needs to be set                                                           |
+| newClass |               | The CSS class to change to. oldClass also needs to be set                                                             |
+| duration |               | The length of time in ms that the button will be active after the first click. If not set the button will stay active |
 
 ## Usage example
 ````html
