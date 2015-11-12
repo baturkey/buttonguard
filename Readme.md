@@ -1,7 +1,7 @@
 # Buttonguard
 
 Buttonguard is a JQuery plugin that makes users click a button twice to submit a form
-Example: 
+
 !(https://github.com/baturkey/buttonguard/blob/master/example.gif "Example")
 
 ## Requires
