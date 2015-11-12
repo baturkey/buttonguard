@@ -13,7 +13,7 @@ if(typeof jQuery === 'undefined') {
 		var btn = this;
 		var oldHtml = btn.html();
 
-		this.attr('type', 'button')
+		this.attr('type', 'button');
 		return this.click(function(event) {
 
 			if(btn.attr('type') == 'button') {
